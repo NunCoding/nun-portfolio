@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
-import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -13,11 +12,10 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-card to-muted relative overflow-hidden">
-      <div className="absolute top-6 right-6 z-20">
-        <ThemeToggle />
-      </div>
-
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-card to-muted relative overflow-hidden"
+    >
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 bg-primary rounded-full animate-float" />
@@ -56,10 +54,10 @@ export default function HeroSection() {
             className={`flex flex-col sm:flex-row justify-center gap-4 pt-8 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
             style={{ animationDelay: "0.4s" }}
           >
-            <Button size="lg" className="px-8 py-3 text-lg font-medium cursor-pointer">
+            <Button size="lg" className="px-8 py-3 text-lg font-medium">
               View My Work
             </Button>
-            <Button variant="outline" size="lg" className="px-8 py-3 text-lg font-medium hover:text-white bg-transparent cursor-pointer">
+            <Button variant="outline" size="lg" className="px-8 py-3 text-lg font-medium bg-transparent">
               Download Resume
             </Button>
           </div>
@@ -70,7 +68,7 @@ export default function HeroSection() {
             style={{ animationDelay: "0.6s" }}
           >
             <a
-              href="#"
+              href="https://github.com/NunCoding"
               className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               <Github className="w-6 h-6" />

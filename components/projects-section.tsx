@@ -123,7 +123,7 @@ export default function ProjectsSection() {
   }, [selectedCategory])
 
   return (
-    <section ref={sectionRef} className="py-20 bg-muted/30">
+    <section id="projects" ref={sectionRef} className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div>
           {/* Section Header */}
