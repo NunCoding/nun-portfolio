@@ -10,14 +10,14 @@ import Image from "next/image"
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Dashboard",
+    title: "Skill and Assessment ability program",
     description:
-      "A comprehensive admin dashboard for managing online stores with real-time analytics, inventory management, and order processing.",
-    image: "/ecommerce_Project.jpg",
-    technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Chart.js"],
+      "An advanced platform designed to evaluate and track user skills through interactive assessments. It provides administrators with powerful tools to manage assessments, monitor performance, and analyze results in real time, ensuring accurate measurement of abilities and progress.",
+    image: "/assessment.png",
+    technologies: ["Nuxt.js", "JavaScript", "Tailwind CSS","Laravel Api", "Chart.js"],
     category: "Web Application",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://assessment-knowledge.vercel.app/",
+    githubUrl: "https://github.com/NunCoding/assessment-knowledge",
     featured: true,
   },
   {
@@ -155,11 +155,11 @@ export default function ProjectsSection() {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {filteredProjects.map((project, index) => (
               <Card
                 key={project.id}
-                className={`group overflow-hidden bg-card border-border hover:border-primary transition-all duration-300 hover:shadow-lg ${
+                className={`group overflow-hidden bg-card border-border transition-all duration-300 hover:shadow-lg ${
                   isVisible ? "animate-fade-in-up" : "opacity-0"
                 } ${project.featured ? "md:col-span-2 lg:col-span-1" : ""}`}
                 style={{ animationDelay: `${0.1 * index}s` }}
@@ -170,9 +170,9 @@ export default function ProjectsSection() {
                     alt={project.title}
                     width={500}
                     height={300}
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                  <div className="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                     <Button size="sm" variant="secondary" asChild>
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <Eye className="w-4 h-4 mr-2" />

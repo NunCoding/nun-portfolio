@@ -54,10 +54,10 @@ export default function HeroSection() {
             className={`flex flex-col sm:flex-row justify-center gap-4 pt-8 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
             style={{ animationDelay: "0.4s" }}
           >
-            <Button size="lg" className="px-8 py-3 text-lg font-medium">
+            <Button size="lg" className="px-8 py-6 text-lg font-medium">
               View My Work
             </Button>
-            <Button variant="outline" size="lg" className="px-8 py-3 text-lg font-medium bg-transparent">
+            <Button variant="outline" size="lg" className="px-8 py-6 text-lg font-medium bg-transparent">
               Download Resume
             </Button>
           </div>
