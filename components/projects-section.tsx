@@ -22,14 +22,14 @@ const projects = [
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "AgriConnect",
     description:
-      "A collaborative project management tool with drag-and-drop functionality, team collaboration features, and progress tracking.",
-    image: "/ecommerce_Project.jpg",
-    technologies: ["React", "Node.js", "MongoDB", "Socket.io", "Material-UI"],
-    category: "SaaS Platform",
+      "A digital agriculture marketplace that connects farmers directly with consumers. It helps farmers sell at fair prices while giving consumers access to fresh, local produce with secure and transparent transactions.",
+    image: "/agriconnect.png",
+    technologies: ["Nextjs", "Typescript", "shadcn"],
+    category: "Website",
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/NunCoding/agri_connect",
     featured: true,
   },
   {
