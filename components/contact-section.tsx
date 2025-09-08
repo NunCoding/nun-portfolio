@@ -21,7 +21,7 @@ const contactInfo = [
     icon: Phone,
     title: "Phone",
     value: "(+855) 87 509 939 / 319 997 497",
-    href: "tel:+85587509939",
+    href: "tel:087509939",
   },
   {
     icon: MapPin,
